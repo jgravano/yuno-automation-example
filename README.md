@@ -8,8 +8,8 @@ Public Api automation
 ## :robot: instalación, ejecución de test y creación de reporte automático:
 pre-condición: instalar Python (en mac, abrir terminal y pegar el siguiente comando: brew install python3)
 
-1. git clone https://github.com/juangravano/lemon_challenge.git
-2. cd lemon_challenge
+1. git clone https://github.com/juangravano/yuno-automation-example
+2. cd yuno-automation-example
 3. pip3 install -r requirements.txt
 4. python3 -m pytest test/ --html=report/report.html --self-contained-html
 
