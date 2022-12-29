@@ -17,7 +17,15 @@ class TestCustomer:
         
     def test_get_session(self):
         """
-        TEST: se envía una petición con una session, debe devolver los datos de dicho customer.
+        TEST: se envía una petición con una session, debe devolver los datos de dicha session.
         """
-        response = self.requests.get_session(session_id="fb74f0fb-a041-480a-ae12-c0d304ec9026")
+        response = self.requests.get_session(session_id="218852f7-7fd3-4f4e-b5af-777b2c5e683c")
         assert response.status_code == 200
+
+    def test_get_invalid_session(self):
+        """
+        TEST: se envía una petición con una session inexistente, debe devolver error.
+        """
+        response = self.requests.get_session(session_id="218852f7-7fd3-4f4e-b6af-777b2c5e683c")
+        assert response.status_code == 400
+        assert response.json()['code'] == 'CHECKOUT_SESSION_NOT_EXISTS'
