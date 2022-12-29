@@ -1,10 +1,10 @@
-from src.helpers.customer_helper import CustomerHelper
+from src.helpers.assert_helper import AssertHelper
 from src.requests.customers_requests import CustomersRequests
 
 
 class TestCustomer:
     requests = CustomersRequests()
-    helper = CustomerHelper()
+    helper = AssertHelper()
 
     def test_create_customer_ok(self):
         """

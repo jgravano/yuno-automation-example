@@ -1,6 +1,6 @@
 from datetime import date
 
-class CustomerHelper:
+class AssertHelper:
 
     def assert_current_date(self, response):
         current_date = str(date.today())
