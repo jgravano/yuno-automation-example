@@ -13,5 +13,5 @@ class SessionRequests:
         return response
 
     def get_session(self, session_id):
-        response = self.api_client.get(path=f'{endpoints.SESSIONS}/{session_id}')
+        response = self.api_client.get(path=f'{endpoints.SESSIONS}/{session_id}/{endpoints.PAYMENT_METHODS}')
         return response

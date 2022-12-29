@@ -21,10 +21,3 @@ class TestCustomer:
         """
         response = self.requests.get_session(session_id="fb74f0fb-a041-480a-ae12-c0d304ec9026")
         assert response.status_code == 200
-
-    def test_get_invalid_session(self):
-        """
-        TEST: se envía una petición con un session_id inexistente, debe devolver error.
-        """
-        response = self.requests.get_session(session_id="fb74f0fb-a041-480a-ae12-c0d304ec9026")
-        assert response.status_code == 400
