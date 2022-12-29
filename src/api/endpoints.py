@@ -1,4 +1,4 @@
 PAYMENTS='payments'
 CUSTOMERS='customers'
-CHECKOUT='checkout/sessions'
+SESSIONS='checkout/sessions'
 REPORTS='reports'
