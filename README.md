@@ -1,3 +1,6 @@
+![all tests](https://github.com/github/docs/actions/workflows/run-test.yml/badge.svg)
+
+
 # Yuno Automation Example :robot:
 Public Api automation
 
