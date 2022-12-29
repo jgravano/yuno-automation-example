@@ -1,4 +1,4 @@
-![all tests](https://github.com/github/docs/actions/workflows/run-test.yml/badge.svg)
+![all tests](https://github.com/juangravano/yuno-automation-example/actions/workflows/run-test.yml/badge.svg)
 
 
 # Yuno Automation Example :robot:
